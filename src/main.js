@@ -4,6 +4,7 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store/store";
 import "materialize-css/dist/js/materialize.min.js";
+// import './registerServiceWorker'
 // npm install materialize-css@next
 
 Vue.use(Vuex);

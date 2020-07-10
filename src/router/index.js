@@ -14,6 +14,11 @@ const routes = [
     name: "tasks",
     component: () => import("../views/Tasks.vue"),
   },
+  {
+    path: "/task/:id",
+    name: "task",
+    component: () => import("../views/Task.vue"),
+  },
 ];
 
 const router = new VueRouter({
