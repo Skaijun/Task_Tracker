@@ -10,7 +10,12 @@
         </div>
         <div class="chips" ref="chips"></div>
         <div class="input-field">
-          <textarea id="description" class="materialize-textarea" v-model="description"></textarea>
+          <textarea
+            id="description"
+            class="materialize-textarea"
+            :maxlength="descriptionMaxLength"
+            v-model="description"
+          ></textarea>
           <label for="textarea2">Description</label>
           <span
             class="character-counter"
