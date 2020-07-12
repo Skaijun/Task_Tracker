@@ -24,6 +24,6 @@ export default {
   max-width: 1200px;
   padding: 15px;
   box-sizing: border-box;
-  overflow: auto;
+  overflow: visible;
 }
 </style>
