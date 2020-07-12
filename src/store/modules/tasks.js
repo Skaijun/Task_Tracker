@@ -1,11 +1,12 @@
 const state = {
-  tasks:
-    JSON.parse(localStorage.getItem("tasks")).map((task) => {
-      if (new Date(task.date) < new Date()) {
-        task.status = "outdated";
-      }
-      return task;
-    }) || [],
+  tasks: JSON.parse(localStorage.getItem("tasks"))
+    ? JSON.parse(localStorage.getItem("tasks")).map((task) => {
+        if (new Date(task.date) < new Date()) {
+          task.status = "outdated";
+        }
+        return task;
+      })
+    : [],
   descriptionMaxLength: 2048,
 };
 
